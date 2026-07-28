@@ -8,8 +8,9 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 
 class ProductController extends AbstractController
 {
-    public function __construct(private ProductRepository $productRepository)
-    {
+    public function __construct(
+        private readonly ProductRepository $productRepository
+    ) {
     }
 
     public function all(): JsonResponse
