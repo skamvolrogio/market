@@ -1,0 +1,7 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    App\Components\Api\Controller\ProductController: ~
+    App\Components\Admin\Repository\ProductRepository: ~

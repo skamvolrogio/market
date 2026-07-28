@@ -4,4 +4,3 @@ services:
         autoconfigure: true
 
     App\Components\Admin\Controller\IndexController: ~
-    App\Components\Admin\Repository\ProductRepository: ~
