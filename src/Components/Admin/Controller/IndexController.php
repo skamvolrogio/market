@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Components\Admin\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+
+class IndexController extends AbstractController
+{
+    public function index(Request $request): Response
+    {
+        return $this->render('@Admin/index.html.twig', [
+            'name' => 'maks'
+        ]);
+    }
+}

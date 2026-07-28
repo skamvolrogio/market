@@ -1,0 +1,3 @@
+admin.index:
+    path: /admin
+    controller: App\Components\Admin\Controller\IndexController::index
