@@ -1,3 +1,7 @@
 api.index:
     path: /products
     controller: App\Components\Api\Controller\ProductController::all
+
+api.categories:
+    path: /categories
+    controller: App\Components\Api\Controller\CategoryController::all
