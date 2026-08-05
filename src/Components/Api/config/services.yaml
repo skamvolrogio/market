@@ -6,3 +6,4 @@ services:
     App\Components\Api\Controller\ProductController: ~
     App\Components\Api\Controller\CategoryController: ~
     App\Components\Admin\Repository\CategoryRepository: ~
+    App\Components\Admin\Repository\ProductRepository: ~

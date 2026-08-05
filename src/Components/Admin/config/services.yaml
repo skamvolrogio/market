@@ -5,3 +5,4 @@ services:
 
     App\Components\Admin\Controller\IndexController: ~
     App\Components\Admin\Repository\CategoryRepository: ~
+    App\Components\Admin\Repository\ProductRepository: ~

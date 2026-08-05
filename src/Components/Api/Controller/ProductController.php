@@ -2,14 +2,19 @@
 
 namespace App\Components\Api\Controller;
 
+use App\Components\Admin\Repository\ProductRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 class ProductController extends AbstractController
 {
-    public function all(): array
-    {
+    public function __construct(
+        private readonly ProductRepository $productRepository,
+    ) {
+    }
 
-        return [];
+    public function all(): JsonResponse
+    {
+        return $this->json($this->productRepository->findAllProducts());
     }
 }
